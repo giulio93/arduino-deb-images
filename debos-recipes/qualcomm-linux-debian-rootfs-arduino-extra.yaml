@@ -305,7 +305,6 @@ actions:
       # enable extra unit
       systemctl enable remoteproc_audio_fixup
       systemctl enable key_events
-      systemctl enable headset-mic-gain-fixup
 
   - action: run
     description: update systemd timesync clock
