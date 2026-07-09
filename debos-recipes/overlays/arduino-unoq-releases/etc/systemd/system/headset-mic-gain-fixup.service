@@ -1,0 +1,10 @@
+[Unit]
+Description=Force headset mic capture gain to UCM-intended value (WirePlumber does not apply the Headset device's UCM EnableSequence)
+Before=sound.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/arduino/scripts/fix_headset_mic_gain.sh
+
+[Install]
+WantedBy=basic.target
