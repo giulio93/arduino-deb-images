@@ -1,5 +1,6 @@
 [Unit]
 Description=Force headset mic capture gain to UCM-intended value (WirePlumber does not apply the Headset device's UCM EnableSequence)
+After=alsa-restore.service
 Before=sound.target
 
 [Service]
